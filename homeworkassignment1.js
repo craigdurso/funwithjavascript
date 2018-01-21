@@ -36,23 +36,29 @@ if(number<100){
 
 
 
+function doorGame(door) {
+  console.log(typeof door);
 
-var door1
-
-function doorgame(door1, door2, door3){
-  return door1
-  return door2
-  return door3
-  return door4
+  if (door === 1 ){
+    return ("you win the grand prize");
+} else if (door === 2)
+  { return  ("you win a new car");
+} else if (door === 3)
+  { return ("no luck here");
+} else{
+  return ("win a free lunch");
 }
-  if (door1)
-  {console.log;("you win the grand prize")
-}else if(door2)
-  {console.log;("you win a new car")
-}else(door3)
-  {console.log;("no luck")
-}else(door4)
-  {console.log;("win a free lunch")}
 
-doorgame(door1)
-alert(result);
+}
+
+var prize = doorGame(2)
+  alert(prize);
+
+var prize = doorGame(1);
+  alert(prize);
+
+var prize = doorGame(3);
+alert(prize);
+
+var prize = doorGame("lol");
+alert(prize);
